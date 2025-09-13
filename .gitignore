@@ -1,0 +1,47 @@
+# --- Build outputs (Java/Maven) ---
+target/
+*.class
+*.jar
+# keep Maven wrapper files if you use them
+!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
+
+# Maven plugin byproducts
+release.properties
+dependency-reduced-pom.xml
+
+# --- Spring Boot / local runtime ---
+*.log
+*.pid
+.env
+*.local
+
+# --- IDE / Editor ---
+*.iml
+.idea/
+.vscode/
+.project
+.classpath
+.settings/
+*.swp
+*.swo
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+
+# --- Helm / Kubernetes ---
+helm/**/charts/
+helm/**/Chart.lock
+helm/**/*.tgz
+helm/**/values*.local.yaml
+helm/**/secrets*.yaml
+**/.helmignore
+
+# --- Docker ---
+.dockerignore
+
+# --- Node (only if you build frontend assets) ---
+node_modules/
+npm-debug.log*
+yarn-error.log*
