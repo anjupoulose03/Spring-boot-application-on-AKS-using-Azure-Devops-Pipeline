@@ -7,7 +7,7 @@ replicaCount: 1
 
 # This sets the container image more information can be found here: https://kubernetes.io/docs/concepts/containers/images/
 image:
-  repository: anjuacr1234.azurecr.io/springboot-app
+  repository: anjuacr1234.azurecr.io/anjupoulose03/spring-boot-application-on-aks-using-azure-devops-pipeline
   # This sets the pull policy for images.
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
